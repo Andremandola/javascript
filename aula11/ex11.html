@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema País</title>
+</head>
+<body>
+    <h1>Seu páis</h1>
+    Digite seu país <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Buscar" onclick="buscar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function buscar(){
+            var p = window.document.getElementById ('txtp')
+            var vel = p.value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Seu país atual é ${vel}<p>`
+            if (vel == `Brasil`) {
+                res.innerHTML += `Você é Brasileiro`
+            } else{
+                res.innerHTML += `Você é Estrangeiro`
+            }
+
+        }
+    </script>
+</body>
+</html>
