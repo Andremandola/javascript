@@ -24,6 +24,18 @@ section{
 
 }
 
+div{
+    text-align: center;
+    padding: 5px;
+}
+
+.foto{
+    width: 80%;
+    border-radius: 10px;
+    
+    
+}
+
 footer{
     color: white;
     text-align: center;
