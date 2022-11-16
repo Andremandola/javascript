@@ -10,7 +10,7 @@ function verificar() {
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto') 
-        img.style.width = 100;
+        img.style.cssText = "max-width:200px"
         if (document.getElementById('mas').checked) {
             genero = 'Homem'
             if (idade >=0 && idade < 10) {
